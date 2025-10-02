@@ -139,20 +139,20 @@ export const Hero = () => {
 
         {/* Scroll Indicator */}
         <motion.div
-          className="absolute bottom-10 left-1/2 transform -translate-x-1/2"
-          initial={{ opacity: 0, y: -20 }}
-          animate={{ opacity: 1, y: 0 }}
-          transition={{ delay: 1.2, duration: 0.8 }}
-        >
-          <Button
-            variant="ghost"
-            size="icon"
-            onClick={() => scrollToSection("#about")}
-            className="rounded-full animate-bounce"
-          >
-            <ArrowDown className="h-6 w-6" />
-          </Button>
-        </motion.div>
+  className="absolute bottom-4 left-1/2 transform -translate-x-1/2 z-50 hidden lg:block"
+  initial={{ opacity: 0, y: -20 }}
+  animate={{ opacity: 1, y: 0 }}
+  transition={{ delay: 1.2, duration: 0.8 }}
+>
+  <Button
+    variant="ghost"
+    size="icon"
+    onClick={() => scrollToSection("#about")}
+    className="rounded-full animate-bounce"
+  >
+    <ArrowDown className="h-6 w-6" />
+  </Button>
+</motion.div>
       </div>
     </section>
   );
