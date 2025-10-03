@@ -21,7 +21,7 @@ export const Hero = () => {
       <div className="container mx-auto px-2 sm:px-4 py-20 relative z-10">
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
           {/* Left Content */}
-          <div className="space-y-8">
+          <div className="space-y-8 order-2 lg:order-1">
             <motion.div
               initial={{ opacity: 0, y: 30 }}
               animate={{ opacity: 1, y: 0 }}
@@ -119,7 +119,7 @@ export const Hero = () => {
             initial={{ opacity: 0, scale: 0.8 }}
             animate={{ opacity: 1, scale: 1 }}
             transition={{ delay: 0.5, duration: 1 }}
-            className="flex items-center justify-center relative"
+            className="flex items-center justify-center relative order-1 lg:order-2"
           >
             <div className="relative">
               {/* Glowing background effect */}
@@ -129,7 +129,7 @@ export const Hero = () => {
               <motion.img
                 src="/images/hero.png"
                 alt="Portfolio Hero"
-                className="relative z-10 w-[400px] h-[400px] lg:w-[500px] lg:h-[500px] object-cover rounded-full shadow-elegant"
+                className="relative z-10 w-[300px] h-[300px] sm:w-[400px] sm:h-[400px] lg:w-[500px] lg:h-[500px] object-cover rounded-full shadow-elegant"
                 whileHover={{ scale: 1.05 }}
                 transition={{ type: "spring", stiffness: 300 }}
               />
@@ -139,7 +139,7 @@ export const Hero = () => {
 
         {/* Scroll Indicator */}
         <motion.div
-  className="absolute bottom-4 left-1/2 transform -translate-x-1/2 z-50 hidden lg:block"
+  className="absolute bottom-4 left-[45%] transform -translate-x-1/2 z-50 lg:block"
   initial={{ opacity: 0, y: -20 }}
   animate={{ opacity: 1, y: 0 }}
   transition={{ delay: 1.2, duration: 0.8 }}
