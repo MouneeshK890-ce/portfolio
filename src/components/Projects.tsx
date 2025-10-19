@@ -13,6 +13,14 @@ const projects = [
     tags: ["React", "Tailwind", "Redux"],
     github: "https://github.com/MouneeshK890-ce/todo-app",
     live: "https://mouneesh-todo-app.web.app",
+  },
+  {
+    title: "Climate Tracker",
+    description: "A sleek, responsive web app that provides real-time weather updates for any city.",
+    image:"/images/weather.png",
+    tags: ["React", "Weather API", "CSS"],
+    github : "https://github.com/MouneeshK890-ce/weather-app",
+    live: "https://mouneesh-climatrack.web.app"
   }
 ];
 
@@ -53,7 +61,7 @@ export const Projects = () => {
                   <img
                     src={project.image}
                     alt={project.title}
-                    className="w-full h-64 object-cover md:object-[center_28%] object-[center_69%] group-hover:scale-110 transition-smooth"
+                    className="w-full h-64 object-cover md:object-[center_25%] object-[center_25%] group-hover:scale-110 transition-smooth"
                   />
                  <div className="absolute inset-0 bg-gradient-to-t from-background/90 to-transparent opacity-0 group-hover:opacity-100 transition-smooth flex items-end p-6">
              <div className="flex gap-2">

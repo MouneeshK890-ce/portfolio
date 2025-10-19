@@ -70,9 +70,9 @@ export const About = () => {
             className="space-y-6"
           >
             {[
-              { label: "Experience", value: "Fresher" },
-              { label: "Projects Completed", value: "1" },
-              { label: "Technologies Familiar With", value: "10+" },
+              { label: "Experience", value: "Aspiring Developer" },
+              { label: "Projects Completed", value: "2" },
+              { label: "Tech Stack", value: "5+" },
             ].map((stat, index) => (
               <motion.div
                 key={stat.label}

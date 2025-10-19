@@ -139,7 +139,7 @@ export const Hero = () => {
 
         {/* Scroll Indicator */}
         <motion.div
-  className="absolute bottom-4 left-[45%] transform -translate-x-1/2 z-50 lg:block"
+  className="absolute bottom-4 left-[45%] transform -translate-x-1/2 z-50 hidden lg:block"
   initial={{ opacity: 0, y: -20 }}
   animate={{ opacity: 1, y: 0 }}
   transition={{ delay: 1.2, duration: 0.8 }}

@@ -144,3 +144,8 @@ All colors MUST be HSL.
     background-image: var(--gradient-accent);
   }
 }
+
+.my-style{
+  height: 2rem;
+  width: 2rem;
+}

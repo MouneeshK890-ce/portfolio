@@ -1,14 +1,28 @@
 import { motion } from "framer-motion";
 import { useInView } from "framer-motion";
 import { useRef } from "react";
-import { Code2, Database, Palette, Server, Smartphone, Zap } from "lucide-react";
 import { Card } from "@/components/ui/card";
+import { IoLogoReact } from "react-icons/io5";
+import { BiLogoTailwindCss } from "react-icons/bi";
+import { BiLogoTypescript } from "react-icons/bi";
 
 const skills = [
   {
-    icon: Code2,
-    title: "Frontend Development",
-    description: "React, TypeScript, Tailwind CSS",
+    icon: IoLogoReact,
+    title: "React JS",
+    description: "Create dynamic, interactive UIs with reusable components and hooks.",
+    color: "text-primary",
+  },
+  {
+    icon: BiLogoTailwindCss,
+    title: "Tailwind CSS",
+    description: "Build responsive, modern designs fast with utility-first CSS.",
+    color: "text-primary",
+  },
+  {
+    icon: BiLogoTypescript,
+    title: "TypeScript",
+    description: "Write safer, scalable code with strong typing and modern JS features.",
     color: "text-primary",
   },
 ];
