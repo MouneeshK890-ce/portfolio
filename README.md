@@ -1,73 +1,94 @@
-# Welcome to your Lovable project
+# 🌐 Personal Portfolio — Mouneesh
 
-## Project info
+This is my personal portfolio website, built to showcase my projects, skills, and learning journey as a frontend developer.  
+The site was generated initially using **Lovable.ai**, and I customized it by adding new components, updating content, and adjusting the layout and styling to match my profile.
 
-**URL**: https://lovable.dev/projects/f272338c-ed5c-44f9-9a6b-c796028b4d3a
+---
 
-## How can I edit this code?
+## 🚀 Tech Stack
+- **React**
+- **TypeScript**
+- **Tailwind CSS**
+- **Framer-motion (smoother animations)**
+- **Lovable.ai (base generator)**
+- **Deployment: Firebase**
 
-There are several ways of editing your application.
+---
 
-**Use Lovable**
+## ✨ What the Portfolio Includes
 
-Simply visit the [Lovable Project](https://lovable.dev/projects/f272338c-ed5c-44f9-9a6b-c796028b4d3a) and start prompting.
+- 👤 **About Me** section  
+- 🛠️ **Tech Stack overview**  
+- 📂 **Projects showcase** with details and links  
+- 📝 Project descriptions written by me  
+- 📬 **Contact section** for recruiters and collaborators  
+- 📱 Fully **responsive design**
 
-Changes made via Lovable will be committed automatically to this repo.
+---
 
-**Use your preferred IDE**
+## 🔧 Customizations I Made
 
-If you want to work locally using your own IDE, you can clone this repo and push changes. Pushed changes will also be reflected in Lovable.
+- ➕ Added new components (ex: cards, sections, layouts)  
+- 🎨 Customized styling, spacing, and colors  
+- ✍️ Replaced default text with my own details  
+- 📁 Updated and organized project content  
+- 🛠️ Fixed small layout and responsiveness issues  
 
-The only requirement is having Node.js & npm installed - [install with nvm](https://github.com/nvm-sh/nvm#installing-and-updating)
+> Even though the base was generated, the portfolio reflects my own customization work and attention to detail.
 
-Follow these steps:
+---
 
-```sh
-# Step 1: Clone the repository using the project's Git URL.
-git clone <YOUR_GIT_URL>
+## ▶️ Live Demo
+**Visit my portfolio here:**  
+👉 https://mouneesh-portfolio.web.app
 
-# Step 2: Navigate to the project directory.
-cd <YOUR_PROJECT_NAME>
+---
 
-# Step 3: Install the necessary dependencies.
-npm i
+## 🛠️ Setup & Installation (Optional)
 
-# Step 4: Start the development server with auto-reloading and an instant preview.
+If someone wants to run it locally:
+
+```bash
+git clone https://github.com/MouneeshK890-ce/portfolio.git
+cd portfolio
+npm install
+npm start
+```
+
+(or)
+
+```bash
 npm run dev
 ```
 
-**Edit a file directly in GitHub**
+---
 
-- Navigate to the desired file(s).
-- Click the "Edit" button (pencil icon) at the top right of the file view.
-- Make your changes and commit the changes.
+## 🎯 Purpose of This Project
 
-**Use GitHub Codespaces**
+This portfolio helps me:
 
-- Navigate to the main page of your repository.
-- Click on the "Code" button (green button) near the top right.
-- Select the "Codespaces" tab.
-- Click on "New codespace" to launch a new Codespace environment.
-- Edit files directly within the Codespace and commit and push your changes once you're done.
+- Present my projects professionally  
+- Share my learning journey  
+- Build credibility as a frontend developer  
+- Prepare for internship and entry-level opportunities  
 
-## What technologies are used for this project?
+---
 
-This project is built with:
+## 📚 What I Learned
 
-- Vite
-- TypeScript
-- React
-- shadcn-ui
-- Tailwind CSS
+- Structuring and organizing portfolio content  
+- Making UI updates on an AI-generated codebase  
+- Improving responsiveness and user experience  
+- Deploying a production website  
 
-## How can I deploy this project?
+---
 
-Simply open [Lovable](https://lovable.dev/projects/f272338c-ed5c-44f9-9a6b-c796028b4d3a) and click on Share -> Publish.
+## 📧 Contact
 
-## Can I connect a custom domain to my Lovable project?
+**Portfolio:** https://mouneesh-portfolio.web.app  
+**Email:** mouneesh.kandhasamy@gmail.com 
+**LinkedIn:** https://www.linkedin.com/in/mouneesh-kandhasamy
 
-Yes, you can!
+---
 
-To connect a domain, navigate to Project > Settings > Domains and click Connect Domain.
-
-Read more here: [Setting up a custom domain](https://docs.lovable.dev/features/custom-domain#custom-domain)
+⭐ If you like my portfolio, feel free to connect or drop feedback!
