@@ -86,8 +86,8 @@ This portfolio helps me:
 ## 📧 Contact
 
 **Portfolio:** https://mouneesh-portfolio.web.app  
-**Email:** mouneesh.kandhasamy@gmail.com 
-**LinkedIn:** https://www.linkedin.com/in/mouneesh-kandhasamy
+**LinkedIn:** https://www.linkedin.com/in/mouneesh-kandhasamy  
+**Email:** mouneesh.kandhasamy@gmail.com
 
 ---
 
