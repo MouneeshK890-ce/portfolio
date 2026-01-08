@@ -1,22 +1,22 @@
 import { motion } from "framer-motion";
-import { ArrowDown, Github, Linkedin, Mail } from "lucide-react";
+import { ArrowDown, Github, Linkedin, Mail, Sparkles } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { ParticlesBackground } from "./ParticlesBackground";
-import { Scene3D } from "./Scene3D";
 
-export const Hero = () => {
+interface HeroProps {
+  playedLoader: boolean;
+}
+
+export const Hero = ({playedLoader}: HeroProps) => {
   const scrollToSection = (href: string) => {
     const element = document.querySelector(href);
     element?.scrollIntoView({ behavior: "smooth" });
   };
 
   return (
-    <section id="hero" className="relative min-h-screen flex items-center justify-center overflow-hidden">
+    <motion.section id="hero" className="mt-0 relative min-h-screen flex items-center justify-center overflow-hidden">
       <ParticlesBackground />
-      
       {/* Gradient Blur Backgrounds */}
-      <div className="absolute top-20 left-10 w-72 h-72 bg-primary/30 rounded-full blur-[120px] animate-glow-pulse"></div>
-      <div className="absolute bottom-20 right-10 w-96 h-96 bg-accent/30 rounded-full blur-[120px] animate-glow-pulse" style={{ animationDelay: "1s" }}></div>
 
       <div className="container mx-auto px-2 sm:px-4 py-20 relative z-10">
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
@@ -28,6 +28,21 @@ export const Hero = () => {
               transition={{ duration: 0.8 }}
               className="space-y-4"
             >
+              {/* Available Badge */}
+<motion.div
+  initial={{ opacity: 0, y: -10 }}
+  animate={{ opacity: 1, y: 0 }}
+  transition={{ duration: 0.6 }}
+  className="mb-6"
+>
+  <span className="inline-flex items-center gap-2 px-4 py-2 rounded-full glass-card pulse-glow">
+    <span className="w-2 h-2 bg-green-500 rounded-full animate-pulse" />
+    <span className="text-sm font-medium text-foreground/80">
+      Open to Work
+    </span>
+    <Sparkles className="w-4 h-4 text-primary" />
+  </span>
+</motion.div>
               <motion.h1
                 className="text-5xl md:text-7xl font-bold"
                 initial={{ opacity: 0, y: 20 }}
@@ -53,7 +68,10 @@ export const Hero = () => {
                 animate={{ opacity: 1, y: 0 }}
                 transition={{ delay: 0.6, duration: 0.8 }}
               >
-                Focused on crafting modern, user-friendly websites. Passionate about turning ideas into interactive designs while constantly learning new technologies
+                I create modern web applications using React and TypeScript,
+                with an emphasis on performance, maintainable code, and
+                great user experience.
+
               </motion.p>
             </motion.div>
 
@@ -127,9 +145,10 @@ export const Hero = () => {
               
               {/* Hero Image */}
               <motion.img
-                src="/images/hero.png"
+                src="/images/heroImage.webp"
                 alt="Portfolio Hero"
-                className="relative z-10 w-[300px] h-[300px] sm:w-[400px] sm:h-[400px] lg:w-[500px] lg:h-[500px] object-cover rounded-full shadow-elegant"
+                className="relative z-10 w-[300px] h-[300px] sm:w-[400px] sm:h-[400px] lg:w-[500px] lg:h-[500px] object-cover object-[center_36%] rounded-full shadow-elegant"
+                loading="eager"
                 whileHover={{ scale: 1.05 }}
                 transition={{ type: "spring", stiffness: 300 }}
               />
@@ -154,6 +173,6 @@ export const Hero = () => {
   </Button>
 </motion.div>
       </div>
-    </section>
+    </motion.section>
   );
 };

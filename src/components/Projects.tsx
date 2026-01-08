@@ -8,17 +8,17 @@ import { Card } from "@/components/ui/card";
 const projects = [
   {
     title: "Todo App",
-    description: "A full-featured todo application with user task management.",
+    description: "A task management application that helps users organize, track, and complete daily tasks efficiently.",
     image:"/images/TODO.png" ,
-    tags: ["React", "Tailwind", "Redux"],
+    tags: ["React", "Redux", "Tailwind CSS"],
     github: "https://github.com/MouneeshK890-ce/todo-app",
     live: "https://mouneesh-todo-app.web.app",
   },
   {
     title: "Climate Tracker",
-    description: "A sleek, responsive web app that provides real-time weather updates for any city.",
+    description: "A responsive weather application that fetches and displays real-time weather data for any city using a public API.",
     image:"/images/weather.png",
-    tags: ["React", "Weather API", "CSS"],
+    tags: ["React", "REST API", "CSS"],
     github : "https://github.com/MouneeshK890-ce/weather-app",
     live: "https://mouneesh-climatrack.web.app"
   }
@@ -30,7 +30,6 @@ export const Projects = () => {
 
   return (
     <section id="projects" className="py-20 relative overflow-hidden">
-      <div className="absolute top-20 right-10 w-96 h-96 bg-accent/20 rounded-full blur-[120px]"></div>
       
       <div className="container mx-auto px-4 relative z-10" ref={ref}>
         <motion.div
@@ -44,7 +43,7 @@ export const Projects = () => {
           </h2>
           <div className="w-20 h-1 gradient-hero mx-auto rounded-full"></div>
           <p className="mt-4 text-muted-foreground max-w-2xl mx-auto">
-            Here are some of my recent projects that showcase my skills and passion for development.
+           Some of the frontend projects I’ve built to apply my skills in real-world scenarios.
           </p>
         </motion.div>
 
@@ -61,7 +60,8 @@ export const Projects = () => {
                   <img
                     src={project.image}
                     alt={project.title}
-                    className="w-full h-64 object-cover md:object-[center_25%] object-[center_25%] group-hover:scale-110 transition-smooth"
+                    loading="lazy"
+                    className="w-full h-64 object-cover md:object-[center_25%] object-[center_50%] group-hover:scale-110 transition-smooth"
                   />
                  <div className="absolute inset-0 bg-gradient-to-t from-background/90 to-transparent opacity-0 group-hover:opacity-100 transition-smooth flex items-end p-6">
              <div className="flex gap-2">

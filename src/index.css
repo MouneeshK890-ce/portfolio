@@ -145,7 +145,63 @@ All colors MUST be HSL.
   }
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+}
+
 .my-style{
   height: 2rem;
   width: 2rem;
 }
+
+@keyframes scroll {
+  from {
+    transform: translateX(0);
+  }
+  to {
+    transform: translateX(-50%);
+  }
+}
+
+.animate-scroll {
+  animation: scroll 25s linear infinite;
+  will-change: transform;
+  transform: translateZ(0);
+}
+
+/* Faster on mobile */
+@media (max-width: 640px) {
+  .animate-scroll {
+    animation-duration: 20s;
+  }
+}
+
+.glass-card {
+  background: rgba(255, 255, 255, 0.08);
+  backdrop-filter: blur(14px);
+  -webkit-backdrop-filter: blur(14px);
+  border: 1px solid rgba(255, 255, 255, 0.18);
+}
+
+@keyframes pulseGlow {
+  0% {
+    box-shadow:
+      0 0 0px rgba(34, 197, 94, 0.3),
+      0 0 10px rgba(34, 197, 94, 0.4);
+  }
+  100% {
+    box-shadow:
+      0 0 10px rgba(34, 197, 94, 0.6),
+      0 0 25px rgba(34, 197, 94, 0.7);
+  }
+}
+
+.pulse-glow {
+  animation: pulseGlow 1.8s ease-in-out infinite alternate;
+}
+

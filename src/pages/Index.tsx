@@ -5,14 +5,18 @@ import { Projects } from "@/components/Projects";
 import { Skills } from "@/components/Skills";
 import { Contact } from "@/components/Contact";
 
-const Index = () => {
+interface IndexProps {
+  playedLoader: boolean;
+}
+
+const Index = ({ playedLoader }: IndexProps) => {
   return (
     <div className="min-h-screen">
       <Navigation />
-      <Hero />
+      <Hero playedLoader={playedLoader} />
       <About />
-      <Projects />
       <Skills />
+      <Projects />
       <Contact />
       <footer className="py-8 border-t border-border">
         <div className="container mx-auto px-4 text-center text-muted-foreground">

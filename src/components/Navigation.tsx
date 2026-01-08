@@ -43,7 +43,7 @@ export const Navigation = () => {
       initial={{ y: -100 }}
       animate={{ y: 0 }}
       className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 ${
-        scrolled ? "bg-background/80 backdrop-blur-lg border-b border-border" : "bg-transparent"
+        scrolled ? "bg-background/60 backdrop-blur-lg border-b border-border" : "bg-transparent"
       }`}
     >
       <div className="container mx-auto px-4 py-4">
@@ -53,7 +53,7 @@ export const Navigation = () => {
             animate={{ opacity: 1, x: 0 }}
             className="text-2xl font-bold text-gradient"
           >
-            Portfolio
+            MK
           </motion.div>
 
           {/* Desktop Navigation */}
