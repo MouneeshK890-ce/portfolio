@@ -7,9 +7,17 @@ import { Card } from "@/components/ui/card";
 
 const projects = [
   {
+    title: "FreshMart",
+    description: "A responsive grocery e-commerce application that allows users to browse products, manage a cart, and complete a secure checkout flow with authentication and order confirmation.",
+    image: "/images/freshmart.png",
+    tags: ["React", "Redux Toolkit", "React Router", "Tailwind CSS", "LocalStorage"],
+    github: "https://github.com/MouneeshK890-ce/freshmart",
+    live: "https://freshmart890.netlify.app",
+  },
+  {
     title: "Todo App",
     description: "A task management application that helps users organize, track, and complete daily tasks efficiently.",
-    image:"/images/TODO.png" ,
+    image: "/images/todo.png",
     tags: ["React", "Redux", "Tailwind CSS"],
     github: "https://github.com/MouneeshK890-ce/todo-app",
     live: "https://mouneesh-todo-app.web.app",
@@ -17,9 +25,9 @@ const projects = [
   {
     title: "Climate Tracker",
     description: "A responsive weather application that fetches and displays real-time weather data for any city using a public API.",
-    image:"/images/weather.png",
+    image: "/images/weather.png",
     tags: ["React", "REST API", "CSS"],
-    github : "https://github.com/MouneeshK890-ce/weather-app",
+    github: "https://github.com/MouneeshK890-ce/weather-app",
     live: "https://mouneesh-climatrack.web.app"
   }
 ];
@@ -30,7 +38,7 @@ export const Projects = () => {
 
   return (
     <section id="projects" className="py-20 relative overflow-hidden">
-      
+
       <div className="container mx-auto px-4 relative z-10" ref={ref}>
         <motion.div
           initial={{ opacity: 0, y: 50 }}
@@ -43,7 +51,7 @@ export const Projects = () => {
           </h2>
           <div className="w-20 h-1 gradient-hero mx-auto rounded-full"></div>
           <p className="mt-4 text-muted-foreground max-w-2xl mx-auto">
-           Some of the frontend projects I’ve built to apply my skills in real-world scenarios.
+            Some of the frontend projects I’ve built to apply my skills in real-world scenarios.
           </p>
         </motion.div>
 
@@ -61,28 +69,28 @@ export const Projects = () => {
                     src={project.image}
                     alt={project.title}
                     loading="lazy"
-                    className="w-full h-64 object-cover md:object-[center_25%] object-[center_50%] group-hover:scale-110 transition-smooth"
+                    className="w-full h-66 object-cover lg:object-[center_20%] md:object-[center_25%] object-[center_40%] group-hover:scale-110 transition-smooth"
                   />
-                 <div className="absolute inset-0 bg-gradient-to-t from-background/90 to-transparent opacity-0 group-hover:opacity-100 transition-smooth flex items-end p-6">
-             <div className="flex gap-2">
-                 {project.github && (
-                   <a href={project.github} target="_blank" rel="noopener noreferrer">
-                    <Button size="sm" variant="secondary" className="glow-accent">
-          <Github className="h-4 w-4 mr-2" />
-          Code
-        </Button>
-      </a>
-    )}
-    {project.live && (
-      <a href={project.live} target="_blank" rel="noopener noreferrer">
-        <Button size="sm" className="gradient-hero">
-          <ExternalLink className="h-4 w-4 mr-2" />
-          Live Demo
-        </Button>
-      </a>
-    )}
-  </div>
-</div>
+                  <div className="absolute inset-0 bg-gradient-to-t from-background/90 to-transparent opacity-0 group-hover:opacity-100 transition-smooth flex items-end p-6">
+                    <div className="flex gap-2">
+                      {project.github && (
+                        <a href={project.github} target="_blank" rel="noopener noreferrer">
+                          <Button size="sm" variant="secondary" className="glow-accent">
+                            <Github className="h-4 w-4 mr-2" />
+                            Code
+                          </Button>
+                        </a>
+                      )}
+                      {project.live && (
+                        <a href={project.live} target="_blank" rel="noopener noreferrer">
+                          <Button size="sm" className="gradient-hero">
+                            <ExternalLink className="h-4 w-4 mr-2" />
+                            Live Demo
+                          </Button>
+                        </a>
+                      )}
+                    </div>
+                  </div>
                 </div>
                 <div className="p-6">
                   <h3 className="text-2xl font-bold mb-2">{project.title}</h3>
